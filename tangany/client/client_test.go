@@ -8,10 +8,10 @@ import (
 func TestNew(t *testing.T) {
 	client := NewClient(Config{
 		TanganyDefaultURL:   "https://api.tangany.com/v1/",
-		TanganyClientID:     "9f78a896-80e9-4e86-b51e-9c7d1e9ebc0f",
-		TanganyClientSecret: "PQK7Q~n.SFxL.KXipI0h8Y3ruk5USTgFzHUDS",
-		TanganyVaultURL:     "https://cw-keyv-demo-finn.vault.azure.net",
-		TanganySubscription: "845cb70213614a9abb95fe3c09d406df"})
+		TanganyClientID:     "",
+		TanganyClientSecret: "",
+		TanganyVaultURL:     "",
+		TanganySubscription: ""})
 
 	www, err := client.CallNamedSmartContractMethod(context.Background(), CallNamedSmartContractMethodRequest{
 		TanganyEthereumNetwork: "ropsten",
